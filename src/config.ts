@@ -35,4 +35,10 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Mastodon`,
     active: true,
   },
+  {
+    name: "Mail",
+    href: "mailto://contact@htgar.org",
+    linkTitle: `${SITE.title} on Email`,
+    active: true,
+  },
 ];
