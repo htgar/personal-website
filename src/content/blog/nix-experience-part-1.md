@@ -1,6 +1,6 @@
 ---
 author: Htgar
-pubDatetime: 2024-01-25 15:01:15
+pubDatetime: 2024-01-28 11:24:15
 title: My Experience with Nix (Part 1 - Introduction)
 slug: nix-experience-part-1
 featured: false
@@ -43,6 +43,6 @@ I was trying out [Universal Blue](https://universal-blue.org/), a project based 
 
 ## What's Next?
 
-As Nix is such a complex piece of software, what was supposed to be a singular post has grown to a series of 5 posts - and there is much more to nix that I haven't covered. The next 3 posts of this series will talk about these different issues and how I tried to use NIx to solve them. I will then end off this series with my takeaways from this whole experience.
+As Nix is such a complex piece of software, what was supposed to be a singular post has grown to a series of 5 posts - and there is much more to Nix that I haven't covered. The next 3 posts of this series will talk about these different issues and how I tried to use Nix to solve them. I will then end off this series with my takeaways from this whole experience.
 
 As I take time to draft up my posts about Nix, to ensure that the _Nixisms_ I'm writing about are accurate, the posts in this series may not be released consecutively (i.e. I may release other smaller posts in between). Do stay tuned!
