@@ -6,6 +6,8 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 
+import expressiveCode from "astro-expressive-code";
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -15,6 +17,9 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    expressiveCode({
+      themes: ["rose-pine-moon", "solarized-light"],
+    }),
   ],
   markdown: {
     remarkPlugins: [
@@ -26,10 +31,10 @@ export default defineConfig({
         },
       ],
     ],
-    shikiConfig: {
-      theme: "one-dark-pro",
-      wrap: true,
-    },
+    // shikiConfig: {
+    //   theme: "catppuccin-mocha",
+    //   wrap: true
+    // }
   },
   vite: {
     optimizeDeps: {

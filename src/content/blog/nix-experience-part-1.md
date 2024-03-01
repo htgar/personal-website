@@ -5,7 +5,9 @@ title: My Experience with Nix (Part 1 - Introduction)
 slug: nix-experience-part-1
 featured: false
 draft: false
-tags: ["nix"]
+tags:
+  - nix
+  - nixos
 description: An introduction to my Experience with Nix
 ---
 

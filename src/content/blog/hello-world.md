@@ -5,7 +5,11 @@ title: Hello, World!
 slug: hello-world
 featured: true
 draft: false
-tags: ["intro", "astro", "tailwindcss", "htmx"]
+tags:
+  - intro
+  - astro
+  - tailwind
+  - htmx
 description: Lessons learnt making this blog.
 ---
 

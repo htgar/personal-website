@@ -7,6 +7,7 @@ featured: false
 draft: false
 tags:
   - nix
+  - package-manager
 description: Nix as a Package Manager
 ---
 
