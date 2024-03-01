@@ -6,6 +6,10 @@ If you want to replicate my website, I recommend you start with the theme templa
 
 ---
 
+## Codeblocks
+
+I am using the [Expressive Code](https://expressive-code.com/) extension for codeblock styling. As such I've made changes to `astro.config.ts` (to set up the plugins), as well as `src/layouts/PostDetails.astro` (to remove the code related to the old codeblock copy button, which was causing issues)
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

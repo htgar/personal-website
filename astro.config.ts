@@ -19,6 +19,10 @@ export default defineConfig({
     sitemap(),
     expressiveCode({
       themes: ["rose-pine-moon", "solarized-light"],
+      frames: {
+        // Example: Hide the "Copy to clipboard" button
+        showCopyToClipboardButton: true,
+      },
     }),
   ],
   markdown: {
