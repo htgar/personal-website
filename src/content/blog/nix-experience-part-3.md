@@ -46,7 +46,7 @@ So you want to use Nix to create a shell environment, how do you do it? Let's sa
 $ nix-shell -p python
 ```
 
-where `-p` just refers to any packages you want. As mentioned in my [last post](/nix-experience-part-2#package-selection), Nix has a vast package selection, that also includes libraries for popular programming languages. Let's say I want to create a Flask webserver using Python 3.11, I can run this command:
+where `-p` just refers to any packages you want. As mentioned in my [last post](/posts/nix-experience-part-2#package-selection), Nix has a vast package selection, that also includes libraries for popular programming languages. Let's say I want to create a Flask webserver using Python 3.11, I can run this command:
 
 ```shell
 $ nix-shell -p python311 python311Packages.flask

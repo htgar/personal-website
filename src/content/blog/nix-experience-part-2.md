@@ -19,7 +19,7 @@ _This is part 2 of a 5 part series on Nix_
 
 Before we delve deeper into the more powerful aspects of Nix, I thought it would be apt to talk about Nix's fundamental identity - that of a package manager.
 
-As mentioned in my [previous article](/nix-experience-part-1#how-it-works), Nix works not quite the same as a standard package manager like `apt` or `pacman`. However, you can use it the same way as you would use those two. The fact that Nix works across all Linux distros as well as MacOS also make it akin to something like [Homebrew](https://brew.sh/).
+As mentioned in my [previous article](/posts/nix-experience-part-1#how-it-works), Nix works not quite the same as a standard package manager like `apt` or `pacman`. However, you can use it the same way as you would use those two. The fact that Nix works across all Linux distros as well as MacOS also make it akin to something like [Homebrew](https://brew.sh/).
 
 In this post, I'll be drawing comparisons mainly to Homebrew, as I initially started using Nix as a replacement for Homebrew to install CLI tools on my system. However, I'll be also talking about package management more generally, and how Nix compares.
 
@@ -35,7 +35,7 @@ $ nix-env --install gcc
 
 It is actually not too bad, considering you can use the shortened version of the flags (e.g. `-i` instead of `--install`). Other than that, commands for uninstalling packages, listing installed packages and updating packages follow the same format as above.
 
-Searching for packages on the other hand, that was a pain. The `nix search` command takes forever to search for a package, especially compared to `brew search`. Of course, this is mainly due to the fact that Nix has such a vast selection of packages, encompassing language-specific package managers as well as plugins for software such as `vim` or `tmux`. On paper, having a vast repository is amazing for a package manager, but for my use case, to install select few CLI programs, Homebrew seemed to be a much better bet. Going to NIx's [web search](https://search.nixos.org)was the way to search for Nix packages, but it in a way was an extra step when I usually just wanted to know what the package was called.
+Searching for packages on the other hand, that was a pain. The `nix search` command takes forever to search for a package, especially compared to `brew search`. Of course, this is mainly due to the fact that Nix has such a vast selection of packages, encompassing language-specific package managers as well as plugins for software such as `vim` or `tmux`. On paper, having a vast repository is amazing for a package manager, but for my use case, to install select few CLI programs, Homebrew seemed to be a much better bet. Going to Nix's [web search](https://search.nixos.org) was the way to search for Nix packages, but it in a way was an extra step when I usually just wanted to know what the package was called.
 
 ## Package Selection
 
