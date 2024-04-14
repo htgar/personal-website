@@ -1,7 +1,7 @@
 ---
 author: Htgar
 pubDatetime: 2024-03-29 14:02:00
-title: My Experience with Nix (Part 4 - Dotfile Management with Home Manager
+title: My Experience with Nix (Part 4 - Dotfile Management with Home Manager)
 slug: nix-experience-part-4
 featured: false
 draft: false
