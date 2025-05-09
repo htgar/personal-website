@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import FeaturedPosts from "../components/FeaturedPosts.astro" 
+import { SiteConfig } from "../utils/SiteConfig"
+---
+
+<BaseLayout title={SiteConfig.title}>
+<h1>{SiteConfig.title} <a href="/rss.xml"></a></h1>
+<p>{SiteConfig.description}</p>
+<FeaturedPosts />
+</BaseLayout>
+

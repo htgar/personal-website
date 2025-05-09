@@ -1,0 +1,53 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import { SiteConfig } from "../utils/SiteConfig";
+
+const { url } = Astro;
+
+const pathname = url.pathname;
+
+const slug = pathname.split('/').filter(Boolean).pop() ?? 'home';
+
+const page_title = slug
+  .split('-')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');
+
+const { title = `${page_title}` } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fuchsia.min.css" >
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="alternate" type="application/rss+xml" title={SiteConfig.title} href={new URL("rss.xml", SiteConfig.site)} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>{title}</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+        <ClientRouter />
+	</head>
+	<body>
+        <main class="container">
+            <Header />
+            <slot />
+            <Footer/>
+        </main>
+	</body>
+<style>
+    html {
+        scrollbar-color: #fa9acf light-dark(#ffffff, #13171f);
+        scrollbar-width: thin;
+    }
+    :root {
+        --pico-font-family: "IBM Plex Mono", monospace;
+        --pico-font-weight: 600;
+    }
+</style>
+</html>
+

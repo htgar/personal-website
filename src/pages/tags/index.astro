@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => { return data.draft !== true; });
+
+const sortedPosts = posts.sort((a, b) => {
+  return +new Date(b.data.pubDatetime) - +new Date(a.data.pubDatetime);
+});
+
+const tags = [...new Set(posts.map((post: any) => post.data.tags).flat())];
+
+---
+
+<BaseLayout title="Tags">
+<h1>Tags</h1>
+<div style="display:flex; flex-wrap:wrap;">
+    {tags.map((tag) => (
+    <p style="margin: 1em;"><a href={`/tags/${tag}`}>{`#${tag}`}</a></p>
+    ))}
+</div>
+</BaseLayout>

@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog', ({ data }) => { return data.draft !== true && data.featured === true; });
+const sortedPosts = posts.sort((a, b) => {
+  return +new Date(b.data.pubDatetime) - +new Date(a.data.pubDatetime);
+});
+---
+
+<h2>Featured Posts</h2>
+<ul>
+  {sortedPosts.map(post => (
+  <li><a href=`/posts/${post.id}`>{post.data.title}</a></li>
+  ))}
+</ul>

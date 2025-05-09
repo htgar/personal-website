@@ -1,0 +1,17 @@
+{
+  "name": "personal-website-new",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.11",
+    "astro": "^5.7.11",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.16.0"
+  }
+}

@@ -1,0 +1,16 @@
+---
+import ThemeSwitcher from "../components/ThemeSwitcher.astro";
+import { SiteConfig } from "../utils/SiteConfig";
+---
+<nav style="position: -webkit-sticky; position: sticky; top: 0; width:100%; background: light-dark(#ffffff, #13171f); outline: 1px solid light-dark(#ffffff, #13171f);">
+    <ul>
+        <li><a href="/"><h1>{SiteConfig.author}</h1></a></li>
+    </ul>
+    <ul style="padding-right: 1em">
+        <li><a href="/about">About</a></li>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><ThemeSwitcher /></li>
+    </ul>
+</nav>
+<hr style="margin-top:0; border: dashed;" />
