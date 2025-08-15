@@ -13,5 +13,5 @@ If you enjoy my posts, do hit me up on my socials, which you can find below.
 
 ## About This Blog
 
-This blog is made using [Astro](https://astro.build), using the [_AstroPaper_ theme](https://github.com/satnaing/astro-paper) by Satnaing. You can find the source code of my blog [here](https://github.com/htgar/personal-website). This blog also has a [RSS feed](/rss.xml) that you can follow to be notified of the latest posts.
+This blog is made using [Astro](https://astro.build). You can find the source code of my blog [here](https://github.com/htgar/personal-website). This blog also has a [RSS feed](/rss.xml) that you can follow to be notified of the latest posts.
 
